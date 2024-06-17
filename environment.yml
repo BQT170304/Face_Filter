@@ -1,0 +1,18 @@
+## conda env update --file environment.yml --prune
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - pip
+  - python=3.11
+  - pytorch=2.1.2
+  - pytorch-cuda=12.1
+  - torchaudio
+  - torchvision
+  - autopep8
+  - pip:
+    - hydra-core
+    - lightning
+    - rootutils
+    - torchmetrics
